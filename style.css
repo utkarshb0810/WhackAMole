@@ -93,6 +93,6 @@ button:hover {
 }
 
 .mole {
-  background: url("Assets/mole.png");
+  background: url("mole.png");
   background-size: cover;
 }
