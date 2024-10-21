@@ -1,0 +1,98 @@
+/* Theme variables */
+:root {
+  --background-color: white;
+  --text-color: black;
+  --button-bg-color: rgb(209, 111, 255);
+  --button-text-color: black;
+  --accent-color: rgb(255, 181, 251);
+}
+
+.dark-theme {
+  --background-color: black;
+  --text-color: white;
+  --button-bg-color: #555;
+  --button-text-color: white;
+  --accent-color: #333;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.main h1 {
+  font-size: 54px;
+  color: var(--text-color);
+}
+
+.main h2 {
+  display: inline-block;
+  background: var(--accent-color);
+  border-radius: 20px;
+  margin: 6px;
+  padding: 12px 5px;
+  color: var(--text-color);
+}
+
+button {
+  margin: 6px;
+  width: 12rem;
+  padding: 12px 5px;
+  border-radius: 20px;
+  border: none;
+  background-color: var(--button-bg-color);
+  color: var(--button-text-color);
+  box-shadow: 1px 1px 3px black;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.square {
+  width: 180px;
+  height: 160px;
+  border: 1px solid black;
+  box-shadow: 1px 3px 5px rgb(150, 45, 255);
+  margin: 10px;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.mole {
+  background: url("Assets/mole.png");
+  background-size: cover;
+}
